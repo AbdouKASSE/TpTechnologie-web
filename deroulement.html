@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>
+            GEST-ENSEIGNEMENT-UASZ
+        </title>
+    </head>
+    <body>
+        <header>
+            <img src="Logo.jpg" alt="LOGO" width="100" height="100"/>
+            <nav>
+                <ul>
+                    <li><a href="index.html" ><b>TABLEAU DE BORD</b></a></li>
+                    <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
+                    <li><a href="emploisdutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
+                    <li><a href="repartition.html"><b>REPARTITION</b></a></li>
+                    <li><a href="#" ><b>MAQUETTE</b></a>
+                        <div>
+                            <ul>
+                                <li><a href="#"><b>GROUPE</b></a></li>
+                                <li><a href="#"><b>CLASSE</b></a></li>
+                                <li><a href="#"><b>EC</b></a></li>
+                                <li><a href="#"><b>UE</b></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="enseignant.html" ><b>ENSEIGNANT</b></a>
+                    <li><a href="salle.html" ><b>SALLE</b></a>
+                    <li><a href="#" ><b>DECONNECXION</b>></a>
+                </ul>
+            </nav>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <div>
+                        <button id="bouton1">AJOUTER DEROULEMENT</button>
+                    </div>
+                </section>
+                <section>
+                    <div class=" form-div">
+                        <form name="formEnseignant"  method="post" action="enseignant.php">
+                            <div>
+                                <label>SEANCE<font color="red">*</font></label>
+                                <input type="text" id="inputDeroule" name="deroulement" placeholder="deroulement ici">
+                            </div>
+                            <div>
+                                <label>DATE DEBUT<font color="red">*</font></label>
+                                <input type="text" id="inputDebut" name="debut" placeholder="date debut ici">
+                            </div>
+                            <div>
+                                <label>DATE FIN<font color="red">*</font></label>
+                                <input type="text" id="inputFin" name="fin" placeholder="date fin ici">
+                            </div>
+                            <div>
+                                <label>TYPE DE SEANCE<font color="red">*</font></label>
+                                <input type="text" id="inputType" name="typeSeance" placeholder="typeSeance ici">
+                            </div>
+                            <div>
+                                <label>SALLE<font color="red">*</font></label>
+                                <input type="text" id="inputSalle" name="salle" placeholder="salle ici">
+                            </div>
+                            <div>
+                                <label>DESCRIPTION<font color="red">*</font></label>
+                                <input type="text" id="inputDescription" name="description" placeholder="description ici">
+                            </div>
+                            
+                            <div>
+                                <font color="red">Les champs qui ont * sont obligatoire</font>
+                                <br><button type="button">Fermer</button>
+                                <button type="submit" name="btnEnregistrement">ENREGISTRER</button>
+                            </div>
+                      </form>
+
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <table id="tab-exemple" border="1">
+                            <thead>
+                                <tr>
+                                    <th>SEANCE</th>
+                                    <th>DATE DEBUT</th>
+                                    <th>DATE FIN</th>
+                                    <th>TYPE DE SEANCE</th>
+                                    <th>SALLE</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>SEANCE</th>
+                                    <th>DATE DEBUT</th>
+                                    <th>DATE FIN</th>
+                                    <th>TYPE DE SEANCE</th>
+                                    <th>SALLE</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Technologie web</td>
+                                    <td>12/02/2024</td>
+                                    <td>19/02/2024</td>
+                                    <td>TP</td>
+                                    <td>C03</td>
+                                    <td>Satisfait</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </section>
+                <aside>
+
+                </aside>
+                <aside>
+                    
+                </aside>
+            </article>
+            <aside>
+
+            </aside>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#"><b>A PROPOS</b></a></li>
+                    <li><a href="#"><b>CONTACT</b></a></li>
+                </ul>
+    
+            </nav>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </footer>
+    </body>
+</html>
