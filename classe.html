@@ -5,12 +5,11 @@
         <title>
             GEST-ENSEIGNEMENT-UASZ
         </title>
-        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <header>
             <img src="Logo.jpg" alt="LOGO" width="100" height="100"/>
-            <nav class="nav1">
+            <nav>
                 <ul>
                     <li><a href="index.html" ><b>TABLEAU DE BORD</b></a></li>
                     <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
@@ -42,35 +41,27 @@
             <article>
                 <section>
                     <div>
-                        <button id="bouton1">AJOUTER DEROULEMENT</button>
+                        <button id="bouton1">AJOUTER CLASSE</button>
                     </div>
                 </section>
                 <section>
                     <div class=" form-div">
                         <form name="formEnseignant"  method="post" action="enseignant.php">
                             <div>
-                                <label>SEANCE<font color="red">*</font></label>
-                                <input type="text" id="inputDeroule" name="deroulement" placeholder="deroulement ici">
+                                <label>NOM CLASSE<font color="red">*</font></label>
+                                <input type="text" id="inputNomClasse" name="nomClasse" placeholder="nom classe ici">
                             </div>
                             <div>
-                                <label>DATE DEBUT<font color="red">*</font></label>
-                                <input type="text" id="inputDebut" name="debut" placeholder="date debut ici">
+                                <label>NIVEAU<font color="red">*</font></label>
+                                <input type="text" id="inputNiveau" name="niveau" placeholder="niveau ici">
                             </div>
                             <div>
-                                <label>DATE FIN<font color="red">*</font></label>
-                                <input type="text" id="inputFin" name="fin" placeholder="date fin ici">
-                            </div>
-                            <div>
-                                <label>TYPE DE SEANCE<font color="red">*</font></label>
-                                <input type="text" id="inputType" name="typeSeance" placeholder="typeSeance ici">
+                                <label>NOMBRE ETUDIANT<font color="red">*</font></label>
+                                <input type="text" id="inputNbEtudiant" name="nbEtudiant" placeholder="nombre etudiant ici">
                             </div>
                             <div>
                                 <label>SALLE<font color="red">*</font></label>
-                                <input type="text" id="inputSalle" name="salle" placeholder="salle ici">
-                            </div>
-                            <div>
-                                <label>DESCRIPTION<font color="red">*</font></label>
-                                <input type="text" id="inputDescription" name="description" placeholder="description ici">
+                                <input type="text" id="inputSalleC" name="salleC" placeholder="salle ici">
                             </div>
                             
                             <div>
@@ -87,49 +78,39 @@
                         <table id="tab-exemple" border="1">
                             <thead>
                                 <tr>
-                                    <th>SEANCE</th>
-                                    <th>DATE DEBUT</th>
-                                    <th>DATE FIN</th>
-                                    <th>TYPE DE SEANCE</th>
+                                    <th>NOM CLASSE</th>
+                                    <th>NIVEAU</th>
+                                    <th>NOMBRE ETUDIANT</th>
                                     <th>SALLE</th>
-                                    <th>DESCRIPTION</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>SEANCE</th>
-                                    <th>DATE DEBUT</th>
-                                    <th>DATE FIN</th>
-                                    <th>TYPE DE SEANCE</th>
+                                    <th>NOM CLASSE</th>
+                                    <th>NIVEAU</th>
+                                    <th>NOMBRE ETUDIANT</th>
                                     <th>SALLE</th>
-                                    <th>DESCRIPTION</th>
                                 </tr>
                             </tfoot>
                             <tbody>
                                 <tr>
+                                    <th>0</th>
                                     <td>1</td>
                                     <td>2</td>
                                     <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                    <td>6</td>
                                     
                                 </tr>
                                 <tr>
-                                    <td>Technologie web</td>
-                                    <td>12/02/2024</td>
-                                    <td>19/02/2024</td>
-                                    <td>TP</td>
+                                    <th>Master GL</th>
+                                    <td>M1</td>
+                                    <td>14</td>
                                     <td>C03</td>
-                                    <td>Satisfait</td>
                                 </tr>
                                 <tr>
+                                    <th>0</th>
                                     <td>1</td>
                                     <td>2</td>
                                     <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                    <td>6</td>
                                 </tr>
                             </tbody>
 

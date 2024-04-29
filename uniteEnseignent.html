@@ -5,15 +5,14 @@
         <title>
             GEST-ENSEIGNEMENT-UASZ
         </title>
-        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <header>
             <img src="Logo.jpg" alt="LOGO" width="100" height="100"/>
-            <nav class="nav1">
+            <nav>
                 <ul>
                     <li><a href="index.html" ><b>TABLEAU DE BORD</b></a></li>
-                    <li><a href="deroulement.html" \><b>DEROULEMENT</b></a></li>
+                    <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
                     <li><a href="emploisdutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
                     <li><a href="repartition.html"><b>REPARTITION</b></a></li>
                     <li><a href="maquette.html" ><b>MAQUETTE</b></a>
@@ -26,7 +25,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="enseignant.html"><b>ENREGISTRER</b></a>
+                    <li><a href="enseignant.html" ><b>ENSEIGNANT</b></a>
                     <li><a href="salle.html" ><b>SALLE</b></a>
                     <li><a href="#" ><b>DECONNECXION</b></a>
                 </ul>
@@ -42,53 +41,49 @@
             <article>
                 <section>
                     <div>
-                        <button id="bouton1">AJOUTER ENSEIGNANT</button>
+                        <button id="bouton1">AJOUTER UE</button>
                     </div>
                 </section>
                 <section>
                     <div class=" form-div">
                         <form name="formEnseignant"  method="post" action="enseignant.php">
                             <div>
-                                <label>MATRICULE<font color="red">*</font></label>
-                                <input type="text" id="inputMatricule" name="matricule" placeholder="matricule ici">
+                                <label>CODE UE<font color="red">*</font></label>
+                                <input type="text" id="inputCodeUE" name="codeUE" placeholder="code UE ici">
                             </div>
                             <div>
-                                <label>nom<font color="red">*</font></label>
-                                <input type="text" id="inputNom" name="matricule" placeholder="nom ici">
+                                <label>LIBELLE<font color="red">*</font></label>
+                                <input type="text" id="inputLibelle" name="libelle" placeholder="libelle ici">
                             </div>
                             <div>
-                                <label>Prenom<font color="red">*</font></label>
-                                <input type="text" id="inputprenom" name="matricule" placeholder="Prenom ici">
+                                <label>COEFFICIANT<font color="red">*</font></label>
+                                <input type="text" id="inputCoeficiant" name="coefficiant" placeholder="coefficiant ici">
                             </div>
-                            <div><label>Status<font color="red">*</font></label></div>
-                            <div id="status1">
-                                <input type="checkbox" id="gridChestatus1" name="status1">
-                               <label>
-                                PER
-                               </label>
-
+                            <div>
+                                <label>CREDIT<font color="red">*</font></label>
+                                <input type="text" id="inputCredit" name="credit" placeholder="credit ici">
                             </div>
-                            <div id="status2">
-                                <input type="checkbox" id="gridChestatus2" name="status2"></div>
-                               <label>
-                                VACATAIRE
-                               </label>
-
+                            <div>
+                                <label>SEMESTRE<font color="red">*</font></label>
+                                <input type="text" id="inputSemestre" name="semestre" placeholder="semestre ici">
                             </div>
+                            <div>
+                                <label>DUREE CM<font color="red">*</font></label>
+                                <input type="text" id="inputDCM" name="dureeCM" placeholder="durre CM ici">
                             </div>
-                            <div class="cacher" hidden="hidden">
-                            <label>GRADE<font color="red">*</font></label>
-                            <input type="checkbox" id="grade" name="grade" placeholder="le grede"></div>
-                           
-                           </div>
-                           <div class="cacher" hidden="hidden">
-                               <label>Departement<font color="red">*</font></label>
-                               <input type="checkbox" id="departement" name="grade" placeholder="Developpeur"></div>
+                            <div>
+                                <label>DUREE TD<font color="red">*</font></label>
+                                <input type="text" id="inputDTD" name="dureeTD" placeholder="durre TD ici">
                             </div>
+                            <div>
+                                <label>DUREE TP<font color="red">*</font></label>
+                                <input type="text" id="inputDTP" name="dureeTP" placeholder="durre TP ici">
+                            </div>
+                            
                             <div>
                                 <font color="red">Les champs qui ont * sont obligatoire</font>
                                 <br><button type="button">Fermer</button>
-                                <button type="submit" name="btnEnregistrement">ENSEIGNANT</button>
+                                <button type="submit" name="btnEnregistrement">ENREGISTRER</button>
                             </div>
                       </form>
 
@@ -99,34 +94,31 @@
                         <table id="tab-exemple" border="1">
                             <thead>
                                 <tr>
-                                    <th>MATRICULE</th>
-                                    <th>NOM</th>
-                                    <th>PRENOM</th>
-                                    <th>GROUDE</th>
-                                    <th>STATUS</th>
-                                    <th>GRADE</th>
-                                    <th>DEPARTEMENT</th>
-                                    <th>OPERATION</th>
-                                    <th>ETAT</th>
-                                    <th>ACTIVER/DESACTIVER</th>
+                                    <th>CODE UE</th>
+                                    <th>LIBELLE</th>
+                                    <th>COEFFICIANT</th>
+                                    <th>CREDIT</th>
+                                    <th>SEMESTRE</th>
+                                    <th>DUREE CM</th>
+                                    <th>DUREE TD</th>
+                                    <th>DUREE TP</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>MATRICULE</th>
-                                    <th>NOM</th>
-                                    <th>PRENOM</th>
-                                    <th>GROUDE</th>
-                                    <th>STATUS</th>
-                                    <th>GRADE</th>
-                                    <th>DEPARTEMENT</th>
-                                    <th>OPERATION</th>
-                                    <th>ETAT</th>
-                                    <th>ACTIVER/DESACTIVER</th>  
+                                    <th>CODE UE</th>
+                                    <th>LIBELLE</th>
+                                    <th>COEFFICIANT</th>
+                                    <th>CREDIT</th>
+                                    <th>SEMESTRE</th>
+                                    <th>DUREE CM</th>
+                                    <th>DUREE TD</th>
+                                    <th>DUREE TP</th>>
                                 </tr>
                             </tfoot>
                             <tbody>
                                 <tr>
+                                    <th>0</th>
                                     <td>1</td>
                                     <td>2</td>
                                     <td>3</td>
@@ -134,23 +126,20 @@
                                     <td>5</td>
                                     <td>6</td>
                                     <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                    <td>10</td>
+                                    
                                 </tr>
                                 <tr>
-                                    <td>201900344</td>
-                                    <td>KASSE</td>
-                                    <td>Abdou</td>
-                                    <td>Groupe</td>
-                                    <td>VACATAIRE</td>
-                                    <td>Maitre de conf</td>
-                                    <td>Informatique</td>
-                                    <td>OP1</td>
-                                    <td>9</td>
-                                    <td>10</td>
+                                    <th>INF111</th>
+                                    <td>Programmation</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>Semestre 1</td>
+                                    <td>20h</td>
+                                    <td>10h</td>
+                                    <td>10h</td>
                                 </tr>
                                 <tr>
+                                    <th>0</th>
                                     <td>1</td>
                                     <td>2</td>
                                     <td>3</td>
@@ -158,9 +147,6 @@
                                     <td>5</td>
                                     <td>6</td>
                                     <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                    <td>10</td>
                                 </tr>
                             </tbody>
 
