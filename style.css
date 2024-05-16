@@ -1,8 +1,266 @@
-.nav1 {
-    
-    background-attachment: fixed;
-    background-color: rgb(105, 98, 98);
-    text-decoration: double;
-   t
+body{
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+.menu{
+    background-color: #2f4f4f;
+    margin: 5px;
 
 }
+
+nav >ul >li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+ul >li a{
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+img{
+    position: relative;
+}
+.nav1{
+    margin: auto;
+    height: 50%;
+}
+
+.forme{
+    text-align: right;
+    padding: 2px;
+}
+.divLi{
+    display: none;
+}
+img{
+    padding: 5px;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color: #ff2;
+    
+}
+.liDiv .divLi{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.liDiv:hover .divLi{
+    display: flex;
+    list-style-type: none;
+}
+.divLi li{
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+.divLi li a{
+    text-decoration: none;
+    padding: 15px 10px;
+    padding-bottom: 5px;  
+}
+.divLi li a:active{background-color: #2f4f4f;}
+.divLi li a:hover{background-color: #2f4f4f;}
+.divLi{
+    background-color: #2f4f4f;
+}
+main{
+    padding: 10;
+    padding-top: 20;
+    flex: 1 0 auto;
+
+}
+
+.sectionFormlaire{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+}
+.sectionConnexion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    background-color: #fff;
+
+
+}
+.form-div{
+    padding: 20px 20px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+.form-div1{
+    padding: 20px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-items: center;
+   
+
+}
+.sectionButton{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#bouton1{
+    font-size: 16px;
+    background-color: darkblue;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.divforme{
+
+}
+.btnEnregistrer{
+    font-size: 16px;
+    background-color: green;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.btnFermer{
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.bntConnexion{
+    font-size: 16px;
+    background-color: green;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+label{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input{
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    
+}
+#tab-exemple{
+    border-collapse: collapse;
+    min-width: 1000px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin: 30px auto;
+    border: 2px solid midnightblue;
+    width: 90%;
+}
+thead,tfoot tr{
+    background-color: midnightblue;
+    color: #fff;
+    width: 20px;
+}
+th{
+    width: 20px ;
+}
+
+footer{
+    flex-shrink: 0;
+    width: 100%;
+    border-top: 1px dashed #000;
+    background: #000;
+    color: #fff;
+
+}
+.contenu-footer{
+    width: 1200;
+    padding: 50px 0 px 100px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    font-size: 20;
+    justify-content: center;
+
+
+}
+.bloc{
+    width: 25%;
+    margin: 0 30px;
+}
+.contact h3,
+.service h3,
+.media h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.contact p{
+    padding: 3px 0;
+}
+.media,.service a{
+    padding: 5px 0;
+}
+.liste-media,
+.liste-service{
+    list-style-type: none;
+}
+.liste-service a{
+    text-decoration: none;
+    color: #fff;
+}
+.liste-service a:hover{
+    color: rgb(3, 3, 3);
+}
+.liste-media a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: all 0.3s ease;
+}
+.liste-service a:hover{
+    color: rgb(185, 88, 88);
+}
+.liste-media a:hover{
+    color: rgb(185, 88, 88);
+}
+.divLogo{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+@media screen and (max-with: 1300px) {
+    .contenu-footer{
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    .bloc{
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2){
+        margin-bottom: 50px;
+    }
+    
+}
+
+
+
+
+
+
+
