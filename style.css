@@ -1,19 +1,32 @@
 body{
     padding: 0px;
     margin: 0px;
-    flex-direction: column;
     background-color: #f1f1f1;
 }
+.bodyConnexion{
+    background-color: white;
+}
+/*-----------------------------Header------------------------------*/
 .menu{
     background-color: #2f4f4f;
     margin: 5px;
 
 }
+nav{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
 
-nav >ul >li{
+    display: flex;
+}
+.navMenu{
+    
+}
+
+.navMenu >ul >li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px;
+    padding: 8px;
 }
 ul >li a{
     color: #fff;
@@ -24,13 +37,20 @@ img{
     position: relative;
 }
 .nav1{
-    margin: auto;
     height: 50%;
 }
 
-.forme{
+.formeInput{
     text-align: right;
-    padding: 2px;
+    margin: 30px 0px 0px 10px;
+}
+.formeInput form input{
+    padding: 6px 5px 5px 5px;
+    outline-color: midnightblue;
+    border: 2px solid #2f4f4f;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    
 }
 .divLi{
     display: none;
@@ -55,13 +75,12 @@ ul li a:hover{
 }
 .divLi li{
     list-style: none;
-    padding: 5px;
-    margin: 5px;
+    padding: 6px 0px;
+    margin: 2px 0px;
 }
 .divLi li a{
     text-decoration: none;
-    padding: 15px 10px;
-    padding-bottom: 5px;  
+    
 }
 .divLi li a:active{background-color: #2f4f4f;}
 .divLi li a:hover{background-color: #2f4f4f;}
@@ -69,16 +88,19 @@ ul li a:hover{
     background-color: #2f4f4f;
 }
 main{
-    padding: 10;
-    padding-top: 20;
+    padding: 20px;
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
 
 }
+/* ------------------------------------------- formulaire    ------------------------------- */
 
 .sectionFormlaire{
+    padding: 20px 10px 10px;
     display: flex;
     justify-content: center;
-    height: 50vh;
+   
     align-items: center;
 }
 .sectionConnexion{
@@ -91,54 +113,90 @@ main{
 
 
 }
+.sectionTableau{
+    padding: 30px;
+
+}
 .form-div{
-    padding: 20px 20px;
-    flex-direction: column;
+    
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 50%;
-    padding-bottom: 10px;
-    padding: 10px;
+    
 }
 .form-div1{
-    padding: 20px 20px;
+    padding: 20px 20px 10px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     align-items: center;
+    width: 30%;
    
 
 }
 .sectionButton{
+
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+   padding: 20px;
+    
 }
 #bouton1{
     font-size: 16px;
     background-color: darkblue;
     color: #fff;
     border-radius: 8px;
+    cursor: pointer;
+    outline: none;
     border: 2px solid rgba(0, 0, 0, 0.4);
+    transition: tranform 0.5s;
 }
-.divforme{
-
+button:hover{
+    transform: scale(1.05);
+}
+form .corps-form .divforme{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form .pied-form{
+    margin: 5px;
+    padding: 5px;
+}
+form .pied-form .p1{
+    padding: 5px;
+}
+form .pied-form .divforme {
+ padding: 5px;
 }
 .btnEnregistrer{
     font-size: 16px;
     background-color: green;
     color: #fff;
     border-radius: 8px;
+    cursor: pointer;
+    outline: none;
     border: 2px solid rgba(0, 0, 0, 0.4);
+    transition: tranform 0.5s;
 }
 .btnFermer{
     font-size: 16px;
     background-color: red;
     color: #fff;
     border-radius: 8px;
+    cursor: pointer;
+    outline: none;
     border: 2px solid rgba(0, 0, 0, 0.4);
+    transition: tranform 0.5s;
+}
+form .corps-form .divformeConnexion{
+    position: relative;
+    padding: 10px 8px 5px;
+    display: flex;
+    width: 100%;
 }
 .bntConnexion{
     font-size: 16px;
@@ -146,18 +204,54 @@ main{
     color: #fff;
     border-radius: 8px;
     border: 2px solid rgba(0, 0, 0, 0.4);
+    transition: tranform 0.5s;
+    cursor: pointer;
+    outline: none;
 }
+
 label{
     font-size: 16px;
     margin-bottom: 10px;
 }
-input{
+form .corps-form .divforme input{
     margin-bottom: 5px;
-    padding: 5px;
-    outline: 0;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 10px 10px 10px 30px;
+    outline-color: midnightblue;
+    border: 2px solid #2f4f4f;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
     
 }
+form .corps-form .divformeConnexion input{
+    margin-bottom: 5px;
+    padding: 10px 10px 10px 30px;
+    outline-color: midnightblue;
+    border: 2px solid #2f4f4f;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    
+}
+form .corps-form .divformeConnexion #inputPassword{
+    margin-left: 20px;
+}
+form .corps-form .divformeConnexion label{
+    font-size: 20px;
+    padding: 10px 10px 0;
+}
+form .corps-form .divforme i{
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    padding: 10px;
+
+}
+form .corps-form .divformeConnexion i{
+    position: absolute;
+    left: 145px;
+    padding: 10px;
+
+}
+/* ----------------------------------------tableau----------------------------------------*/
 #tab-exemple{
     border-collapse: collapse;
     min-width: 1000px;
@@ -177,6 +271,8 @@ th{
     width: 20px ;
 }
 
+/* ------------------------------------------- foooter    ------------------------------- */
+
 footer{
     flex-shrink: 0;
     width: 100%;
@@ -187,7 +283,7 @@ footer{
 }
 .contenu-footer{
     width: 1200;
-    padding: 50px 0 px 100px;
+    padding: 30px 0 px 20px;
     display: flex;
     align-items: flex-start;
     margin: 0 auto;
@@ -198,7 +294,7 @@ footer{
 }
 .bloc{
     width: 25%;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 .contact h3,
 .service h3,
@@ -209,16 +305,21 @@ footer{
 .contact p{
     padding: 3px 0;
 }
-.media,.service a{
-    padding: 5px 0;
+.media, 
+.service a{
+    padding: 5px 0px;
 }
 .liste-media,
 .liste-service{
     list-style-type: none;
+
 }
 .liste-service a{
     text-decoration: none;
     color: #fff;
+    display: block;
+    transition: all 0.3s ease;
+    padding: 5px;
 }
 .liste-service a:hover{
     color: rgb(3, 3, 3);
@@ -228,6 +329,7 @@ footer{
     color: #fff;
     display: block;
     transition: all 0.3s ease;
+    padding: 5px;
 }
 .liste-service a:hover{
     color: rgb(185, 88, 88);

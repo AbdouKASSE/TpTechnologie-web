@@ -7,35 +7,43 @@
         </title>
         <link rel="stylesheet" href="style.css"/>
         <link rel='stylesheet' type='text/css' media='screen' href='styleFooter1.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header class="menu">
             <!--<img src="Logo.jpg" alt="LOGO" width="50" height="50"/>-->
             <nav class="nav1">
-                <ul class="ulNav">
-                    <li><a href="index.html" ><b>TABLEAU DE BORD</b></a></li>
-                    <li><a href="deroulement.html" \><b>DEROULEMENT</b></a></li>
-                    <li><a href="emploisdutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
-                    <li><a href="repartition.html"><b>REPARTITION</b></a></li>
-                    <li class="liDiv"><a href="parametre.html" class="liA" ><b>PARAMETRE</b></a>
-                        <div class="divLi">
-                            <ul>
-                                <li><a href="groupe.html"><b>GROUPE</b></a></li>
-                                <li><a href="classe.html"><b>CLASSE</b></a></li>
-                                <li><a href="EC.html"><b>EC</b></a></li>
-                                <li><a href="uniteEnseignent.html"><b>UE</b></a></li>
-                                <li><a href="classe.html"><b>MAQUETTE</b></a></li>
-                                <li><a href="EC.html"><b>FORMATION</b></a></li>
-                                <li><a href="enseignant.html"><b>ENSEIGNANT </b></a>
-                                <li><a href="salle.html" ><b>SALLE</b></a>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="connecxion.html" ><b>DECONNECXION</b></a>
-                </ul>
-                <form class="forme">
-                    <input type="text" name="menu" placeholder="Recherche"/>
-                </form>
+                <div class="img">
+                    <img src="Logo.jpg" alt="LOGO" width="50" height="50"/>
+                </div>
+                <div class="navMenu">
+                    <ul class="ulNav">
+                        <li><a href="index.html" ><b>TABLEAU DE BORD</b></a></li>
+                        <li><a href="deroulement.html" \><b>DEROULEMENT</b></a></li>
+                        <li><a href="emploisdutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
+                        <li><a href="repartition.html"><b>REPARTITION</b></a></li>
+                        <li class="liDiv"><a href="#" class="liA" ><b>PARAMETRE</b></a>
+                            <div class="divLi">
+                                <ul>
+                                    <li><a href="groupe.html"><b>GROUPE</b></a></li>
+                                    <li><a href="classe.html"><b>CLASSE</b></a></li>
+                                    <li><a href="EC.html"><b>EC</b></a></li>
+                                    <li><a href="uniteEnseignent.html"><b>UE</b></a></li>
+                                    <li><a href="maquette.html"><b>MAQUETTE</b></a></li>
+                                    <li><a href="formation.html"><b>FORMATION</b></a></li>
+                                    <li><a href="enseignant.html"><b>ENSEIGNANT </b></a>
+                                    <li><a href="salle.html" ><b>SALLE</b></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="connecxion.html" ><b>DECONNECXION</b></a>
+                    </ul>
+                </div>
+                <div class="formeInput">
+                    <form class="forme">
+                        <input type="text" name="menu" placeholder="Recherche"/>
+                    </form>
+                </div>
             </nav>
             <div>
     
@@ -54,56 +62,63 @@
                 <section class="sectionFormlaire">
                     <div class="form-div">
                         <form name="formEnseignant"  method="post" action="enseignant.php">
-                            <div class="divforme">
-                                <label>MATRICULE<font color="red">*</font></label>
-                                <input type="text" id="inputMatricule" name="matricule" placeholder="matricule ici">
-                            </div>
-                            <div class="divforme">
-                                <label>nom<font color="red">*</font></label>
-                                <input type="text" id="inputNom" name="matricule" placeholder="nom ici">
-                            </div>
-                            <div class="divforme">
-                                <label>Prenom<font color="red">*</font></label>
-                                <input type="text" id="inputprenom" name="matricule" placeholder="Prenom ici">
-                            </div>
-                            <div class="divforme">
-                                <label for="datetime-local">Date de naissance<font color="red">*</font></label>
-                                <input type="datetime-local" id="inputprenom" name="matricule" placeholder="Prenom ici">
-                            </div>
-                            <div class="divforme"><label>Status<font color="red">*</font></label></div>
-                            <div id="status1">
-                                <input type="checkbox" id="gridChestatus1" name="status1">
-                               <label>
-                                PER
-                               </label>
+                            <div class="corps-form">
+                                <div class="divforme">
+                                    <label>Matricule<font color="red">*</font></label>
+                                    <input type="text" id="inputMatricule" name="matricule" placeholder="matricule ici">
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                </div>
+                                <div class="divforme">
+                                    <label>Nom<font color="red">*</font></label>
+                                    <input type="text" id="inputNom" name="matricule" placeholder="nom ici">
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                </div>
+                                <div class="divforme">
+                                    <label>Prenom<font color="red">*</font></label>
+                                    <input type="text" id="inputprenom" name="matricule" placeholder="Prenom ici">
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                </div>
+                                <div class="divforme">
+                                    <label for="datetime-local">Date de naissance<font color="red">*</font></label>
+                                    <input type="datetime-local" id="inputprenom" name="matricule" placeholder="Prenom ici">
+                                </div>
+                                <div class="divforme"><label>Status<font color="red">*</font></label></div>
+                                <div id="status1">
+                                    <input type="checkbox" id="gridChestatus1" name="status1">
+                                <label>
+                                    PER
+                                </label>
 
+                                </div>
+                                <div id="status2">
+                                    <input type="checkbox" id="gridChestatus2" name="status2">
+                                <label>
+                                    VACATAIRE
+                                </label>
+                                </div>
+                                <div class="cacher" hidden="hidden">
+                                <label>GRADE<font color="red">*</font></label>
+                                <input type="checkbox" id="grade" name="grade" placeholder="le grede">
+                            
+                                </div>
+                                <div class="cacher" hidden="hidden">
+                                    <label>Departement<font color="red">*</font></label>
+                                    <input type="checkbox" id="departement" name="grade" placeholder="Developpeur">
+                                </div>
                             </div>
-                            <div id="status2">
-                                <input type="checkbox" id="gridChestatus2" name="status2">
-                               <label>
-                                VACATAIRE
-                               </label>
-                            </div>
-                            <div class="cacher" hidden="hidden">
-                            <label>GRADE<font color="red">*</font></label>
-                            <input type="checkbox" id="grade" name="grade" placeholder="le grede">
-                           
-                           </div>
-                           <div class="cacher" hidden="hidden">
-                               <label>Departement<font color="red">*</font></label>
-                               <input type="checkbox" id="departement" name="grade" placeholder="Developpeur">
-                            </div>
-                            <div class="divforme">
-                                <font color="red">Les champs qui ont * sont obligatoire</font>
-                                <br><button type="button"  class="btnFermer">Fermer</button>
-                                <button type="submit" class="btnEnregistrer" name="btnEnregistrement">ENREGISTRER</button>
+                            <div class="pied-form">
+                                <div class="divforme">
+                                    <p><font color="red">Les champs qui ont * sont obligatoire</font></p>
+                                    <br><button type="button"  class="btnFermer">Fermer</button>
+                                    <button type="submit" class="btnEnregistrer" name="btnEnregistrement">ENREGISTRER</button>
+                                </div>
                             </div>
                       </form>
                     </div>
 
                     </div>
                 </section>
-                <section>
+                <section class="sectionTableau">
                     <div>
                         <table id="tab-exemple" >
                             <thead>
@@ -274,5 +289,6 @@
                 </div>
             </div>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>

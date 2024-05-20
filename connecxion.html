@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bodyConnexion">
     <header>
         <div class="divLogo">
             <img src="Logo.jpg" alt="LOGO" width="150" height="150"/>
         </div>
     </header>
-    <main>
+    <main class=>
         <section class="sectionConnexion">
             <div class=" form-div1">
                 <form name="formEnseignant"  method="post" action="enseignant.php">
-                    <div>
-                        <label>Nom Utilisateur<font color="red">*</font></label>
-                        <input type="text" id="inputMatricule" name="idsalle" placeholder="nom d'utilisateur ici">
+                    <div class="corps-form">
+                        <div class="divformeConnexion">
+                            <label>Nom Utilisateur<font color="red">*</font></label>
+                            <input type="text" id="inputMatricule" name="idsalle" placeholder="nom d'utilisateur ici">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="divformeConnexion">
+                            <label>Mot  de  Passe <font color="red">*  </font></label>
+                            <input type="password" id="inputPassword" name="nomsalle" placeholder="#*#*#*#*">
+                        </div>
                     </div>
-                    <div>
-                        <label>Mot de Passe <font color="red">*</font></label>
-                        <input type="password" id="inputNom" name="nomsalle" placeholder="#*#*#*#*">
-                    </div>
-                    <div class="divBnt">
-                        <button id="bouton11" class="bntConnexion">Connexion</button>
-                    </div>
-                    <div>
-                        <font color="red">si vous 'avez pas de compte, cliquez <a href="#">ici</a> pour inscrire</font>
-                        
+                    <div class="pied-form">
+                        <div class="divBnt">
+                            <button id="bouton11" class="bntConnexion">Connexion</button>
+                        </div>
+                            <p class="p1"><font color="red">si vous 'avez pas de compte, cliquez <a href="#">ici</a> pour inscrire</font></p>
+                            
                     </div>
             </form>
 
